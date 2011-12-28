@@ -4,8 +4,8 @@ Ext.define('wlm.store.Interviews', {
 
 	proxy : {
 		type : 'ajax',
-		//url : './res/data/interviews.xml',
-		url : 'http://www.welovemusic.fr/testflux/interviews',
+		url : './res/data/interviews.xml',
+		//url : 'http://www.welovemusic.fr/testflux/interviews',
 		reader : {
 			type : 'xml',
 			root : 'items',
