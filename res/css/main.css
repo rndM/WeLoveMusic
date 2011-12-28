@@ -19,8 +19,8 @@ h1 {
 	text-align: justify;
 }
 .x-tab .x-button-icon.mic, .x-button .x-button-icon.x-icon-mask.mic {
-	-webkit-mask-image: url('./img/mic.png')
+	-webkit-mask-image: url('../img/mic.png')
 }
 .x-tab .x-button-icon.note2, .x-button .x-button-icon.x-icon-mask.note2 {
-	-webkit-mask-image: url('./img/note2.png')
+	-webkit-mask-image: url('../img/note2.png')
 }
