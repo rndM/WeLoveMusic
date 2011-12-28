@@ -4,7 +4,7 @@ Ext.define('wlm.store.Articles', {
 
 	proxy : {
 		type : 'ajax',
-		url : 'res/data/testflux.xml',
+		url : './res/data/testflux.xml',
 		reader : {
 			type : 'xml',
 			root : 'items',

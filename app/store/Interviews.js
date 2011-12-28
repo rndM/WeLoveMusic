@@ -4,7 +4,7 @@ Ext.define('wlm.store.Interviews', {
 
 	proxy : {
 		type : 'ajax',
-		url : 'res/data/interviews.xml',
+		url : './res/data/interviews.xml',
 		reader : {
 			type : 'xml',
 			root : 'items',
