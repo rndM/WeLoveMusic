@@ -4,20 +4,14 @@
 
 Ext.define('wlm.view.Viewport', {
 	extend : 'Ext.Container',
+	alias : ['widget.Viewport'],
 
 	config : {
 		fullscreen : true,
 		layout : 'card',
 		items : [{
-			xtype : 'toolbar',
-			docked : 'top',
-			title : 'We Love Music',
-			defaultTitle : 'Title',
-			items : [{
-				text : 'Retour',
-				ui : 'back',
-				hidden : true
-			}]
+			xtype : 'BareTitre',
+
 		}, {
 			xtype : 'TabBar'
 		}]

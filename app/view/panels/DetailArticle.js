@@ -9,8 +9,15 @@ Ext.define('wlm.view.panels.DetailArticle', {
 		defaults : {
 			scrollable : true,
 		},
-		//fullscreen : true,
-		tpl : new Ext.XTemplate("<h1>{titre}</h1><p>{texte}</p>"),
+		fullscreen : true,
+		tpl : new Ext.XTemplate(
+			'<div class="detail">'+
+				'<h1>{titre}</h1>'+
+				'<img src="{image_620x250}"></img>'+
+				'<p>{texte}</p>'+
+			'</div>'
+			
+			),
 	}
 
 });
