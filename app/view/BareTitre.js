@@ -1,4 +1,7 @@
 /**
+ * Barre de titre de toute l'application .
+ * modifiée lors de l'affichage des sarticles
+ *
  * @author : Renaud Mouren
  */
 

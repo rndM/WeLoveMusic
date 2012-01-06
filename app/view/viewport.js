@@ -1,4 +1,8 @@
 /**
+ * Viewport de l'application : contient tout le reste de l'application :
+ * - la barre de titre
+ * - les onglets .
+ *
  * @author : Renaud Mouren
  */
 
