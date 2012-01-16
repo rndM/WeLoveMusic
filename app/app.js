@@ -8,7 +8,7 @@ Ext.Loader.setConfig({
 
 Ext.application({
 	name : 'wlm',
-        appFolder: 'assets/app',
-	autoCreateViewport : true,
+        appFolder: 'app',
+	//autoCreateViewport : true,
 	controllers : 'main'
 });
