@@ -1,4 +1,4 @@
-Ext.define('wlm.store.Articles', {
+﻿Ext.define('wlm.store.Articles', {
 	extend : 'Ext.data.Store',
 	model : 'wlm.model.Article',
 

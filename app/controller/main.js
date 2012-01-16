@@ -61,19 +61,19 @@ Ext.define('wlm.controller.main', {
 
 	},
 	showDetail : function(vue, record) {
-		var bt = vue.up('Viewport').down('button[ui=back]');
+		var bt = vue.up('Screen').down('button[ui=back]');
 		bt.setHidden(false);
-		bt.up('Viewport').down('BareTitre').setTitle(record.data['titre']);
+		bt.up('Screen').down('BareTitre').setTitle(record.data['titre']);
 
 	},
 	buttonTap : function(vue, record) {
-		var bt = vue.up('Viewport').down('button[ui=back]');
+		var bt = vue.up('Screen').down('button[ui=back]');
 		bt.setHidden(true);
 
-		bt.up('Viewport').down('BareTitre').setTitle('We Love Music');
+		bt.up('Screen').down('BareTitre').setTitle('We Love Music');
 
-		bt.up('Viewport').down('Articles').setActiveItem(0);
-		bt.up('Viewport').down('Interviews').setActiveItem(0);
+		bt.up('Screen').down('Articles').setActiveItem(0);
+		bt.up('Screen').down('Interviews').setActiveItem(0);
 
 	}
 });

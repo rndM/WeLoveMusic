@@ -1,4 +1,4 @@
-Ext.define('wlm.model.Article', {
+﻿Ext.define('wlm.model.Article', {
 	extend : 'Ext.data.Model',
 
 	fields : [{
