@@ -9,11 +9,11 @@ Ext.define('wlm.view.panels.ListInterviews', {
 	config : {
 		onItemDisclosure : function(record, btn, index) {
 		},
-		itemTpl : 
-		'<div class="Interviews">' + 
-			'<img src="{image_100x100}"></img>' + 
-			'<h1>{titre}</h1>' + 
-			'<div class="accroche">{accroche}</div>' + 
+		itemTpl :
+		'<div class="Interviews">' +
+			'<img src="{image_100x100}"></img>' +
+			'<h1>{titre}</h1>' +
+			'<div class="accroche">{accroche}</div>' +
 		'</div>'
 	},
 
@@ -22,5 +22,5 @@ Ext.define('wlm.view.panels.ListInterviews', {
 			store : Ext.create('wlm.store.Interviews')
 		});
 		this.callParent([config]);
-	},
+	}
 });

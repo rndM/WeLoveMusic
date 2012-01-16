@@ -11,7 +11,7 @@ Ext.define('wlm.view.Interviews', {
 		fullscreen : true,
 		layout : {
 			type : 'card',
-			animation : 'flip',
+			animation : 'flip'
 
 		},
 		items : [{

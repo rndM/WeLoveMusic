@@ -6,7 +6,7 @@ Ext.define('wlm.controller.main', {
 	extend : 'Ext.app.Controller',
 	models : ['Question', 'Article', 'Interview'],
 	stores : ['Articles', 'Interviews'],
-	views : ['Viewport', 'BareTitre', 'TabBar', 'Articles', 'Interviews', 'Infos', 'panels.ListArticles', 'panels.DetailArticle', 'panels.ListInterviews', 'panels.DetailInterview'],
+	views : ['Screen', 'BareTitre', 'TabBar', 'Articles', 'Interviews', 'Infos', 'panels.ListArticles', 'panels.DetailArticle', 'panels.ListInterviews', 'panels.DetailInterview'],
 
 	init : function() {
 		this.control({
@@ -22,7 +22,7 @@ Ext.define('wlm.controller.main', {
 		});
 	},
 	launch : function() {
-		this.getView("Viewport").create();
+		this.getView("Screen").create();
 	},
 	/**
 	 Methode lancé quand on "tape" sur un article .

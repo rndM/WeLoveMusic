@@ -7,7 +7,7 @@ Ext.define('wlm.view.panels.DetailArticle', {
 	alias : ['widget.DetailArticle'],
 	config : {
 		defaults : {
-			scrollable : true,
+			scrollable : true
 		},
 		fullscreen : true,
 		tpl : new Ext.XTemplate(
@@ -16,7 +16,7 @@ Ext.define('wlm.view.panels.DetailArticle', {
 				'<img src="{image_620x250}"></img>'+
 				'<p>{texte}</p>'+
 			'</div>'
-			
+
 			),
 	}
 

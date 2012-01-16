@@ -8,10 +8,10 @@ Ext.define('wlm.view.Articles', {
 	config : {
 		title : 'Actualité',
 		iconCls : 'note2',
-		//fullscreen : true,
+		fullscreen : true,
 		layout : {
 			type : 'card',
-			animation : 'flip',
+			animation : 'flip'
 
 		},
 		items : [{
