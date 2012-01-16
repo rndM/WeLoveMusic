@@ -3,6 +3,7 @@
  */
 
 function launch() {
+	console.log('onReady');
 	Ext.Loader.setConfig({
 		enabled: true
 	});
