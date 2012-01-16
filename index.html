@@ -7,7 +7,9 @@
 		<script src="touch/sencha-touch-all-debug.js" type="text/javascript" ></script>
 		<script src="app/app.js" type="text/javascript" ></script>
 		<script type="text/javascript">
-			document.addEventListener("onReady", launch(), false);
+			document.addEventListener("deviceready", function () {
+				document.addEventListener("onReady", launch(), false);
+			}, false);
 		</script>
 	</head>
 	<body>
