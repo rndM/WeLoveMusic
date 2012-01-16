@@ -1,14 +1,15 @@
-﻿/**
+/**
  * @author : Renaud Mouren
  */
 
-Ext.Loader.setConfig({
-	enabled : true
-});
+function launch() {
+	Ext.Loader.setConfig({
+		enabled: true
+	});
+	var app = Ext.application({
+		name: 'wlm',
+		controllers: ['main']
+	})
+}
 
-Ext.application({
-	name : 'wlm',
-        appFolder: 'app',
-	//autoCreateViewport : true,
-	controllers : 'main'
-});
+
