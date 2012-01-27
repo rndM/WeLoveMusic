@@ -2,10 +2,35 @@
 <html>
 	<head>
 		<title>We Love Music</title>
-		<link rel="stylesheet" href="css/sencha/sencha-touch.css" type="text/css" >
+		<link rel="stylesheet" href="sencha/resources/css-debug/sencha-touch.css" type="text/css" >
 		<link rel="stylesheet" href="css/main.css" type="text/css" >
-		<script src="js/sencha-touch-all.js" type="text/javascript" ></script>
-		<script src="app.js" type="text/javascript" ></script>
+		<script src="sencha/sencha-touch-debug-w-comments.js" type="text/javascript" ></script>
+		<!-- Application -->
+		<script src="app/app.js" type="text/javascript" ></script>
+		<!-- Modeles -->
+		<script src="app/models/Article.js" type="text/javascript" ></script>
+		<script src="app/models/Interview.js" type="text/javascript" ></script>
+		<!-- Sources de données -->
+		<script src="app/stores/Articles.js" type="text/javascript" ></script>
+		<script src="app/stores/Interviews.js" type="text/javascript" ></script>
+		<!-- Vues -->
+		<script src="app/views/panels/DetailArticle.js" type="text/javascript" ></script>
+		<script src="app/views/panels/ListArticles.js" type="text/javascript" ></script>
+		<script src="app/views/panels/DetailInterview.js" type="text/javascript" ></script>
+		<script src="app/views/panels/ListInterviews.js" type="text/javascript" ></script>
+		<script src="app/views/Articles.js" type="text/javascript" ></script>
+		<script src="app/views/Interviews.js" type="text/javascript" ></script>
+		<script src="app/views/Infos.js" type="text/javascript" ></script>
+	
+		<script src="app/views/BarreTitre.js" type="text/javascript" ></script>
+			<script src="app/views/Main.js" type="text/javascript" ></script>
+		<script src="app/views/Viewport.js" type="text/javascript" ></script>
+		<!-- Controleurs -->
+		<script src="app/controllers/main.js" type="text/javascript" ></script>
+		<script type="text/javascript">
+			//document.addEventListener("deviceready", app.mainLaunch, false);
+			app.mainLaunch
+		</script>
 	</head>
 	<body>
 		<!-- <h1>We Love Music</h1> -->
