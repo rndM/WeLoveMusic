@@ -6,61 +6,40 @@ app.controllers.main = new Ext.Controller({
 	 Methode lancé quand on "tape" sur un article .
 	 */
 	choixArticle : function(options) {
-
-		var id = parseInt(options.id);
-		art = app.stores.Articles.getById(id);
-
 		// retrouve le paneau "articles" puis le paneau de détail
-		var listeArticles = app.views.Viewport.down('Articles');
-		var DetailArticle = app.views.Viewport.down('DetailArticle');
-
-		// envoi a la vue de détail les données de la case choisie dans la liste
-		DetailArticle.update(options.record);
-		// console.log(options.record);
-
-		// Active la vue de détail à la place de la liste
-		listeArticles.setActiveItem(1);
-
-		this.showDetail(options.id, options.record);
-
+		var detail = app.views.Viewport.down('DetailArticle');
+		var rubrique = app.views.Viewport.down('Articles');
+		this.choix(rubrique, detail, options.data);
 	},
 	/**
 	 Methode lancé quand on "tape" sur une interview .
 	 */
 	choixInterview : function(options) {
-
 		// retrouve le paneau "interviews" puis le paneau de détail
-		var listeInterviews = app.views.Viewport.down('Interviews');
-		var DetailInterview = listeInterviews.down('DetailInterview');
-
+		var detail = app.views.Viewport.down('DetailInterview');
+		var rubrique = app.views.Viewport.down('Interviews');
+		this.choix(rubrique, detail, options.data);
+	},
+	/**
+	 Methode lancé Aprés un choix d'article / interview .
+	 */
+	choix : function(rubrique, detail, data) {
 		// envoi a la vue de détail les données de la case choisie dans la liste
-		DetailInterview.update(options.record);
-		//DetailInterview.setData(options.record);
-
+		detail.update(data);
 		// Active la vue de détail à la place de la liste
-		listeInterviews.setActiveItem(1);
+		rubrique.setActiveItem(1);
+		// Affiche le bouton de retour .
+		rubrique.down('button[ui=back]').show();
 
-		// Activation du bouton retour
-		this.showDetail(options.id, options.record);
 	},
-	/**
-
-	 */
-	showDetail : function(vue, record) {
-		//var bt = app.views.Viewport.down('button[ui=back]');
-		//console.log(bt);
-		//bt.setHidden(false);
-		// app.views.Viewport.down('BareTitre').setTitle(record.data['titre']);
-	},
-	/**
-
-	 */
-	buttonTap : function() {
 	
-		var bt = vue.up('Viewport').down('button[ui=back]');
-		bt.setHidden(true);
-
-		bt.up('Viewport').down('BareTitre').setTitle('We Love Music');
+	
+	/**
+	 
+	 */
+	buttonTap : function(bt, e) {
+		console.log(bt);
+		bt.hide();
 
 		bt.up('Viewport').down('Articles').setActiveItem(0);
 		bt.up('Viewport').down('Interviews').setActiveItem(0);

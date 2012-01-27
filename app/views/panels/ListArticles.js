@@ -2,18 +2,22 @@
 	store : app.stores.Articles,
 	fullViewport : true,
 	onItemDisclosure : true,
-
-	itemTpl : '<div class="Articles">' + '<img src="{image_100x100}"></img>' + '<h1>{titre}</h1>' + '<div class="accroche">{accroche}</div>' + '</div>',
+	itemTpl :
+		'<div class="Articles">' +
+			'<img src="{image_100x100}"></img>' +
+			'<h1>{titre}</h1>' +
+			'<div class="accroche">{accroche}</div>' +
+		'</div>',
 
 	listeners : {
-		'select' : function(record) {
-			// console.log(record);
+		'itemtap' : function(view, index, item, e) {
 			Ext.dispatch({
 				controller : app.controllers.main,
 				action : 'choixArticle',
 				id : this.getId(),
+				vue : view,
+				data : this.getStore().getAt(index).data,
 			});
-
 		}
 	}
 });

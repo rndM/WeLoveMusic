@@ -1,7 +1,7 @@
 ﻿/* Barre de titre de toute l'application .
  * modifiée lors de l'affichage des sarticles  */
 
-app.views.BarreTitre = Ext.extend(Ext.Toolbar,{
+app.views.BarreTitre = Ext.extend(Ext.Toolbar, {
 
 	docked : 'top',
 	title : 'We Love Music',
@@ -10,7 +10,16 @@ app.views.BarreTitre = Ext.extend(Ext.Toolbar,{
 		text : 'Retour',
 		ui : 'back',
 		hidden : true
-	}]
+	}],
+	listeners : {
+		'tap' : function(bt, e) {
+			console.log(bt);
+			Ext.dispatch({
+				controller : app.controllers.main,
+				action : 'buttonTap'
+			});
+		}
+	},
 
 });
 
