@@ -1,5 +1,5 @@
 ﻿app.views.Articles = Ext.extend(Ext.Panel, {
-
+	
 	title : 'Actualité',
 	dockedItems : [{
 		xtype : 'BarreTitre',
@@ -8,9 +8,8 @@
 	iconCls : 'note2',
 	fullScreen : true,
 	layout : 'card',
-
 	cardSwitchAnimation : Ext.is.Android ? null : 'flip',
-
+	
 	items : [{
 		xtype : 'ListArticles'
 	}, {
