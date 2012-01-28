@@ -6,8 +6,6 @@
 			pack : 'center'
 		}
 	},
-
-	scrollable : true,
 	items : [{
 		xtype : 'Articles'
 	}, {

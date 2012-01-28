@@ -4,14 +4,10 @@
  * - les onglets .
  */
 
-
-
-app.views.Vp = Ext.extend(Ext.Panel, {
+app.views.Viewport = Ext.extend(Ext.Panel, {
 	fullScreen : true,
-	items : [
-		{ xtype : 'Main' }
-	],
-
-	
+	items : [{
+		xtype : 'Main'
+	}],
 
 });

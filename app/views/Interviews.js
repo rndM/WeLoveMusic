@@ -8,10 +8,7 @@
 	iconCls : 'mic',
 	fullScreen : true,
 	layout : 'card',
-	cardSwitchAnimation : {
-		type : 'flip',
-		duration : 600
-	},
+	cardSwitchAnimation : Ext.is.Android ? null : 'flip',
 
 	items : [{
 		xtype : 'ListInterviews'
