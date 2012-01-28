@@ -1,5 +1,6 @@
 ﻿app.views.Main = Ext.extend(Ext.TabPanel, {
 	fullscreen : true,
+	cardSwitchAnimation : Ext.is.Android ? null : 'slide',
 	tabBar : {
 		dock : 'bottom',
 		layout : {
