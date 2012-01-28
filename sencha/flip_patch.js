@@ -1,6 +1,6 @@
 Ext.apply(Ext.anims, {
 
-	flip : new Ext.Anim({
+	flop : new Ext.Anim({
 		is3d : true,
 		direction : 'left',
 		before : function(el) {

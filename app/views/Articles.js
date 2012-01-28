@@ -4,12 +4,11 @@
 	dockedItems : [{
 		xtype : 'BarreTitre',
 		title : 'We Love Music : Actualité',
-		
 	}],
 	iconCls : 'note2',
 	fullScreen : true,
 	layout : 'card',
-	cardSwitchAnimation : 'flip',
+	cardSwitchAnimation : 'flop',
 	items : [{
 		xtype : 'ListArticles'
 	}, {
