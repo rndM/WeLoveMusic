@@ -1,4 +1,4 @@
-﻿app.models.Article = Ext.regModel("app.models.Article", {
+﻿Ext.regModel("app.models.Article", {
 
 	fields : [{
 		name : 'titre', type : 'string'

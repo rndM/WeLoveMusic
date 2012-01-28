@@ -1,5 +1,6 @@
 ﻿app.views.Main = Ext.extend(Ext.TabPanel, {
 	fullscreen : true,
+	ui : 'dark',
 	cardSwitchAnimation : Ext.is.Android ? null : 'slide',
 	tabBar : {
 		dock : 'bottom',
@@ -13,6 +14,7 @@
 		xtype : 'Interviews'
 	}, {
 		xtype : 'Infos'
-	}]
+	}],
+	
 });
 Ext.reg('Main', app.views.Main);

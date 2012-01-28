@@ -1,8 +1,13 @@
 ﻿app.views.ListArticles = Ext.extend(Ext.List, {
 	store : app.stores.Articles,
 	fullViewport : true,
-	onItemDisclosure : true,
-	itemTpl : '<div class="Articles">' + '<img src="{image_100x100}"></img>' + '<h1>{titre}</h1>' + '<div class="accroche">{accroche}</div>' + '</div>',
+	itemTpl : 
+		'<div class="Articles">' +
+			'<h3>{titre}</h3>' +
+			'<img src="{image_100x100}"></img>' +
+			'<div class="accroche">{accroche}</div>' +
+		'</div>'+
+		'<img class="fleche" src="img/right2.png"></img>',
 
 	listeners : {
 		'itemtap' : function(view, index, item, e) {

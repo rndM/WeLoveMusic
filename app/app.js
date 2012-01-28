@@ -10,6 +10,6 @@ Ext.regApplication({
     mainLaunch: function() {
 
         //if (!device || !this.launched) {return;}
-        this.views.Viewport = new this.views.Viewport();
+        this.viewport = new this.views.Viewport();
     }
 });

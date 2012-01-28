@@ -1,11 +1,16 @@
-﻿h1 {
+﻿h3 {
 	text-align: left;
 	background-color: #CCC;
 	color: black;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: bold;
 }
-.Articles img, .Interviews img {
+.fleche {
+	height: 30px;
+	width: 30px;
+	float: right;
+}
+.Articles > img, .Interviews > img {
 	float: left;
 	margin-right: 10px;
 }
@@ -13,7 +18,7 @@
 	font-style: italic;
 	font-size: 12px;
 	padding-top: 10px;
-	padding-right: 35px;
+	padding-right: 10px;
 	text-align: justify;
 }
 .detail p {
@@ -25,9 +30,18 @@
 	max-width: 100%;
 	max-height: 100%;
 }
+.question {
+	font-style: italic;
+	font-weight: bolder;
+}
+.reponse {
+
+}
 .mic, .mic {
 	-webkit-mask-image: url('../img/mic.png')
 }
 .note2, .note2 {
 	-webkit-mask-image: url('../img/note2.png')
+}
+.x-pane {-webkit-backface-visibility': 'hidden;
 }

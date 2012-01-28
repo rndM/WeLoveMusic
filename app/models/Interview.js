@@ -1,4 +1,20 @@
-﻿app.models.Contact = Ext.regModel("app.models.Interview", {
+﻿Ext.regModel("question", {
+	fields : [{
+		name : 'q', type : 'string'
+	}, {
+		name : 'r', type : 'string'
+	}],
+	proxy: {
+			type:'ajax',
+			reader: {
+				type: 'xml',
+				root: 'questions',
+				record: 'question'
+			}
+		}
+});
+
+Ext.regModel("app.models.Interview", {
 	fields : [{
 		name : 'titre', type : 'string'
 	}, {
@@ -25,7 +41,8 @@
 		name : 'image_300x300', type : 'string'
 	}, {
 		name : 'image_620x250', type : 'string'
-	}], hasMany : {
-		model : 'app.model.Question', name : 'question'
+	}], 
+	hasMany : {
+		model : 'question', name : 'questions'
 	}
 });
