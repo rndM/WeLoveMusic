@@ -2,12 +2,7 @@
 	store : app.stores.Articles,
 	fullViewport : true,
 	onItemDisclosure : true,
-	itemTpl :
-		'<div class="Articles">' +
-			'<img src="{image_100x100}"></img>' +
-			'<h1>{titre}</h1>' +
-			'<div class="accroche">{accroche}</div>' +
-		'</div>',
+	itemTpl : '<div class="Articles">' + '<img src="{image_100x100}"></img>' + '<h1>{titre}</h1>' + '<div class="accroche">{accroche}</div>' + '</div>',
 
 	listeners : {
 		'itemtap' : function(view, index, item, e) {

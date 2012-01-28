@@ -4,6 +4,7 @@
 	dockedItems : [{
 		xtype : 'BarreTitre',
 		title : 'We Love Music : Actualité',
+		
 	}],
 	iconCls : 'note2',
 	fullScreen : true,

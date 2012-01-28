@@ -4,22 +4,20 @@
 app.views.BarreTitre = Ext.extend(Ext.Toolbar, {
 
 	docked : 'top',
-	title : 'We Love Music',
 	items : [{
-		id : 'bt',
 		text : 'Retour',
 		ui : 'back',
-		hidden : true
+		hidden : true,
+		listeners : {
+			'tap' : function(bt, e) {
+				Ext.dispatch({
+					controller : app.controllers.main,
+					action : 'tapBoutonTitre',
+					bt : bt,
+				});
+			}
+		},
 	}],
-	listeners : {
-		'tap' : function(bt, e) {
-			console.log(bt);
-			Ext.dispatch({
-				controller : app.controllers.main,
-				action : 'buttonTap'
-			});
-		}
-	},
 
 });
 
