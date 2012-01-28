@@ -11,11 +11,14 @@ app.controllers.main = new Ext.Controller({
 		// retrouve la rubrique et son panneau de détail .
 		var rubrique = options.vue.up();
 		var detail = rubrique.down('.panel');
+		detail.update(null);
+
+		// Active la vue de détail à la place de la liste
+		rubrique.setActiveItem(1);
 
 		// envoi a la vue de détail les données de la case choisie dans la liste
 		detail.update(options.data);
-		// Active la vue de détail à la place de la liste
-		rubrique.setActiveItem(1);
+
 		// Affiche le bouton de retour .
 		rubrique.down('button[ui=back]').show();
 
