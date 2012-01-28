@@ -4,6 +4,11 @@ app.controllers.main = new Ext.Controller({
 
 	/**
 	 "tap" sur un Article ou un Interview .
+	 params:
+
+	 @options.vue
+	 @options.data
+
 	 */
 	choixArticle : function(options) {
 		// retrouve la rubrique et son panneau de détail .
