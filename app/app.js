@@ -1,5 +1,6 @@
 ﻿
 
+
 Ext.regApplication({
     name: 'app',
     launch: function() {
@@ -7,6 +8,7 @@ Ext.regApplication({
         this.mainLaunch();
     },
     mainLaunch: function() {
+
         //if (!device || !this.launched) {return;}
         this.views.Viewport = new this.views.Vp();
     }

@@ -8,7 +8,12 @@
 	iconCls : 'note2',
 	fullScreen : true,
 	layout : 'card',
-	cardSwitchAnimation : 'flip',
+
+	cardSwitchAnimation : {
+		type : 'flip',
+		duration : 600
+	},
+
 	items : [{
 		xtype : 'ListArticles'
 	}, {

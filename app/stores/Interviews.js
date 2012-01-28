@@ -4,7 +4,7 @@
 
 	proxy : {
 		type : 'ajax',
-		//url : './data/interviews.xml',
+		//url : './resources/data/interviews.xml',
 		url : 'http://www.welovemusic.fr/testflux/interviews',
 		reader : {
 			type : 'xml',
