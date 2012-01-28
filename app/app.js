@@ -5,7 +5,7 @@
 		this.mainLaunch();
 	},
 	mainLaunch : function() {
-		// if(!device || !this.launched) { return; }
-		this.views.Viewport = new this.views.Viewport();
+		//if(!device || !this.launched) { return;	}
+		new this.views.Viewport();
 	}
 });
