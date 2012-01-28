@@ -8,7 +8,7 @@
 	iconCls : 'note2',
 	fullScreen : true,
 	layout : 'card',
-	cardSwitchAnimation : 'cube',
+	cardSwitchAnimation : 'flip',
 	items : [{
 		xtype : 'ListArticles'
 	}, {

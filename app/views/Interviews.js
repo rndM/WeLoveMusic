@@ -8,7 +8,7 @@
 	iconCls : 'mic',
 	fullScreen : true,
 	layout : 'card',
-	cardSwitchAnimation : 'flop',
+	cardSwitchAnimation : 'flip',
 	items : [{
 		xtype : 'ListInterviews'
 	}, {

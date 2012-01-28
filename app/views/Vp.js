@@ -6,7 +6,7 @@
 
 
 
-app.views.Viewport = Ext.extend(Ext.Panel, {
+app.views.Vp = Ext.extend(Ext.Panel, {
 	fullScreen : true,
 	items : [
 		{ xtype : 'Main' }

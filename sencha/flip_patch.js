@@ -2,16 +2,16 @@ Ext.apply(Ext.anims, {
 
 	flop : new Ext.Anim({
 		is3d : true,
-		direction : 'left',
+		//direction : 'left',
 		before : function(el) {
 			var rotateProp = 'Y', fromScale = 1, toScale = 1, fromRotate = 0, toRotate = 0;
 
 			if(this.out) {
 				toRotate = -180;
-				toScale = 0.8;
+				toScale = 1;
 			} else {
 				fromRotate = 180;
-				fromScale = 0.8;
+				fromScale = 1;
 			}
 
 			// if (this.direction == 'up' || this.direction == 'down') {
