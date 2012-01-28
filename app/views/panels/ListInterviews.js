@@ -9,7 +9,6 @@
 			Ext.dispatch({
 				controller : app.controllers.main,
 				action : 'choixArticle',
-				id : this.getId(),
 				vue : view,
 				data : this.getStore().getAt(index).data,
 			});

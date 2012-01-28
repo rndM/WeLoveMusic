@@ -4,11 +4,8 @@ app.controllers.main = new Ext.Controller({
 
 	/**
 	 "tap" sur un Article ou un Interview .
-	 params:
-
-	 @options.vue
-	 @options.data
-
+	 @param	options.vue		la "case" séléctonée
+	 @param	options.data	les données corespondantes a la case
 	 */
 	choixArticle : function(options) {
 		// retrouve la rubrique et son panneau de détail .
@@ -25,6 +22,8 @@ app.controllers.main = new Ext.Controller({
 	},
 	/**
 	 "tap" sur le bouton de retour dans la barre de titre .
+
+	 @param options.bt		le bouton
 	 */
 	tapBoutonTitre : function(options) {
 
