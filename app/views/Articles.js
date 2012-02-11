@@ -8,7 +8,7 @@
 	iconCls : 'note2',
 	fullScreen : true,
 	layout : 'card',
-	cardSwitchAnimation : Ext.is.Android ? null : 'flip',
+	cardSwitchAnimation : Ext.is.Android ? 'slide' : 'flip',
 	
 	items : [{
 		xtype : 'ListArticles'
