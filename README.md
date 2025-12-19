@@ -16,7 +16,6 @@ L'application proposait :
 - 🎤 Découverte de nouveaux artistes et albums
 - 📰 Lecture d'articles et critiques musicales
 - 🔔 Notifications pour les nouveautés
-- 💾 Sauvegarde des contenus favoris
 - 🌐 Navigation optimisée pour mobile
 
 ## 📦 Technologies utilisées
