@@ -8,6 +8,8 @@
 
 ---
 
+![PhoneGap](https://img.shields.io/badge/PhoneGap-1.3-blue) ![Sencha Touch](https://img.shields.io/badge/Sencha_Touch-2-green) ![HTML5](https://img.shields.io/badge/HTML5-E34F26)
+
 Mobile app that was dedicated to the welovemusic.fr website
 
 ## 📱 About
