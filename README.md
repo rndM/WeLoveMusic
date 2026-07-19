@@ -1,5 +1,13 @@
 # WeLoveMusic
 
+---
+
+## 📚 Navigation
+
+**[English Version](README.md)** | **[Version Française](README_FR.md)**
+
+---
+
 Mobile app that was dedicated to the welovemusic.fr website
 
 ## 📱 About
