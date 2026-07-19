@@ -1,33 +1,33 @@
 # WeLoveMusic
 
-Application mobile qui était dédiée au site welovemusic.fr
+Mobile app that was dedicated to the welovemusic.fr website
 
-## 📱 À propos
+## 📱 About
 
-WeLoveMusic était une application mobile dédiée aux passionnés de musique, qui permettait d'accéder facilement au contenu du site welovemusic.fr directement depuis smartphone ou tablette.
+WeLoveMusic was a mobile application dedicated to music enthusiasts, allowing easy access to welovemusic.fr content directly from a smartphone or tablet.
 
-**Note :** Le site welovemusic.fr n'est plus en activité. Ce repository est conservé à des fins d'archivage.
+**Note:** The welovemusic.fr website is no longer active. This repository is kept for archival purposes.
 
-## ✨ Fonctionnalités
+## ✨ Features
 
-L'application proposait : 
+The application offered:
 
-- 🎵 Accès aux dernières actualités musicales
-- 🎤 Découverte de nouveaux artistes et albums
-- 📰 Lecture d'articles et critiques musicales
-- 🔔 Notifications pour les nouveautés
-- 🌐 Navigation optimisée pour mobile
+- 🎵 Access to the latest music news
+- 🎤 Discovery of new artists and albums
+- 📰 Reading articles and music reviews
+- 🔔 Notifications for new content
+- 🌐 Mobile-optimized navigation
 
-## 📦 Technologies utilisées
+## 📦 Technologies Used
 
-- **PhoneGap / Apache Cordova** - Framework hybride pour le développement mobile
-- **Sencha Touch** - Framework JavaScript pour interfaces mobiles
-- **HTML5 / CSS3 / JavaScript** - Technologies web
-- **API REST** - Communication avec welovemusic.fr
+- **PhoneGap / Apache Cordova** - Hybrid mobile development framework
+- **Sencha Touch** - JavaScript framework for mobile interfaces
+- **HTML5 / CSS3 / JavaScript** - Web technologies
+- **API REST** - Communication with welovemusic.fr
 
-## 🙏 Remerciements
+## 🙏 Acknowledgments
 
-Merci à la communauté WeLoveMusic pour leur soutien durant l'existence du projet.
+Thanks to the WeLoveMusic community for their support during the project's lifetime.
 
 ---
 
